@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:overScrollMode="never"
+    android:padding="15dp"
+    android:background="@color/background" >
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/btnBack"
+            android:layout_height="match_parent"
+            android:tint="@color/white"
+            android:src="@drawable/ic_arrow_back"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:paddingVertical="10dp"
+            android:layout_gravity="end"
+            android:textColor="@android:color/white"
+            tools:text="@tools:sample/lorem" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingVertical="10dp"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        tools:text="@tools:sample/lorem" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivCover"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp"
+        tools:src="@drawable/ic_launcher_background" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:overScrollMode="never"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="10dp"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            tools:text="@tools:sample/lorem/random" />
+
+    </ScrollView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
